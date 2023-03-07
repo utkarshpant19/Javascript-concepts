@@ -6,6 +6,10 @@ function x(){
     function y(){
         console.log(a);
     }
-    y();
+    a = 90;
+    return y;
 }
-x();
+var z = x(); // When x is called , it returns function y (whole body)
+
+// 1000 lines of code
+z(); // Since z stores function y, y is called along with it's lexical scope
