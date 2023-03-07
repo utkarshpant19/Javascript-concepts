@@ -1,0 +1,1 @@
+Closure: A function along with its lexical scope forms a Closure;
